@@ -21,3 +21,16 @@ function singleRound(playerSelection, computerSelection) {
         return 'Draw';
     }
 }
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt(
+            'Choose your weapon: rock, paper or scissors.'
+        ).toLowerCase();
+        let computerSelection = getComputerChoice();
+        console.log(singleRound(playerSelection, computerSelection));
+    }
+}
+
+game();
+
