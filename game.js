@@ -1,21 +1,21 @@
 function getComputerChoice() {
-    let choice = ['Rock', 'Paper', 'Scissors'];
+    let choice = ['rock', 'paper', 'scissors'];
     let randomChoice = choice[Math.floor(Math.random() * choice.length)];
     return randomChoice;
 }
 
 function singleRound(playerSelection, computerSelection) {
-    if (playerSelection == 'Rock' && computerSelection == 'Paper') {
+    if (playerSelection == 'rock' && computerSelection == 'paper') {
         return 'You lose! Paper beats Rock';
-    } else if (playerSelection == 'Rock' && computerSelection == 'Scissors') {
+    } else if (playerSelection == 'rock' && computerSelection == 'scissors') {
         return 'You win! Rock beats Scissors';
-    } else if (playerSelection == 'Paper' && computerSelection == 'Scissors') {
+    } else if (playerSelection == 'paper' && computerSelection == 'scissors') {
         return 'You lose! Scissors beats Paper';
-    } else if (playerSelection == 'Paper' && computerSelection == 'Rock') {
+    } else if (playerSelection == 'paper' && computerSelection == 'rock') {
         return 'You win! Paper beats Rock';
-    } else if (playerSelection == 'Scissors' && computerSelection == 'Rock') {
+    } else if (playerSelection == 'scissors' && computerSelection == 'rock') {
         return 'You lose! Rock beats Scissors';
-    } else if (playerSelection == 'Scissors' && computerSelection == 'Paper') {
+    } else if (playerSelection == 'scissors' && computerSelection == 'paper') {
         return 'You win! Scissors beats Paper';
     } else if (playerSelection == computerSelection) {
         return 'Draw';
